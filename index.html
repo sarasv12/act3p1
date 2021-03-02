@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad 3</title>
+	<link rel="stylesheet" type="text/css" href="esti.css">
+</head>
+<body onkeyup="tec();">
+	<div id="div" class="ini">jsadk</div>
+	<input type="text" id="fr" placeholder="Frase">
+	<script>
+		document.getElementById("div").innerHTML="Escribe una frase y presiona A, B o C";
+		var tec=function()
+		{
+			if (event.code=="KeyA")
+			{
+				var fr=document.getElementById("fr").value;
+				document.getElementById("div").innerHTML=fr;
+				document.getElementById("div").className="a";
+			}
+			if (event.code=="KeyB")
+			{
+				var fr=document.getElementById("fr").value;
+				document.getElementById("div").innerHTML=fr;
+				document.getElementById("div").className="b";
+			}
+			if (event.code=="KeyC")
+			{
+				var fr=document.getElementById("fr").value;
+				document.getElementById("div").innerHTML=fr;
+				document.getElementById("div").className="c";
+			}
+		}
+	</script>
+</body>
+</html>
